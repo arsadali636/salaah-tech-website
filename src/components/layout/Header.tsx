@@ -20,6 +20,9 @@ import {
   FaHeartbeat,
   FaShoppingCart,
   FaCogs,
+  FaWallet,
+  FaDumbbell,
+  FaTruck,
 } from "react-icons/fa";
 
 const getSolutionIcon = (iconName: string) => {
@@ -44,10 +47,17 @@ const getSolutionIcon = (iconName: string) => {
       return <FaShoppingCart className="text-purple-500" size={18} />;
     case "erp":
       return <FaCogs className="text-yellow-500" size={18} />;
+    case "fintech":
+      return <FaWallet className="text-indigo-500" size={18} />;
+    case "fitness":
+      return <FaDumbbell className="text-teal-500" size={18} />;
+    case "logistics":
+      return <FaTruck className="text-sky-500" size={18} />;
     default:
       return <FaHome className="text-primary" size={18} />;
   }
 };
+
 
 export default function Header() {
   const pathname = usePathname();

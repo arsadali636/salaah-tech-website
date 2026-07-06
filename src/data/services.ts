@@ -671,6 +671,51 @@ export const services: Service[] = [
     ],
     ["Next.js", "NestJS", "PostgreSQL", "AWS Mediasoup", "HL7/FHIR Protocols"]
   ),
+  createService(
+    "fintech-app",
+    "Fintech & Neo-Banking App",
+    "Secure, scalable mobile banking and financial technology solutions.",
+    "We engineer high-performance fintech platforms and mobile apps featuring multi-currency wallets, payment gateways, biometric security, neo-banking ledgers, and standard regulatory compliance.",
+    "Enterprise Solutions",
+    [
+      "Multi-currency digital wallets",
+      "Biometric & 2FA security integrations",
+      "Real-time transaction ledgers",
+      "P2P money transfers & payments",
+      "Investment & savings modules",
+    ],
+    ["React Native", "NestJS", "PostgreSQL", "Stripe API", "AWS API Gateway"]
+  ),
+  createService(
+    "fitness-app",
+    "Fitness & Wellness App",
+    "Custom fitness tracking, workout planning, and health coaching apps.",
+    "Build interactive health platforms with custom workout plans, step tracking, wearable integrations (Apple Health / Google Fit), caloric intake monitoring, and video coaching features.",
+    "Design & Support",
+    [
+      "Wearable sensor & tracker integrations",
+      "Custom workout & plan builders",
+      "Caloric intake & macro calculator",
+      "Live & on-demand video session players",
+      "Community challenges & achievements",
+    ],
+    ["Flutter", "Node.js", "Firebase", "WebRTC", "Google Fit API"]
+  ),
+  createService(
+    "logistics-software",
+    "Logistics & Fleet Management",
+    "Smart dispatching, route optimization, and fleet tracking systems.",
+    "Optimize supply chains and delivery fleets with real-time GPS tracking, automated dispatching algorithms, route optimization engines, driver manifest tools, and client status updates.",
+    "Enterprise Solutions",
+    [
+      "Route optimization & dispatch planning",
+      "Real-time fleet & asset GPS tracking",
+      "Automated matching & driver manifests",
+      "Proof of delivery & billing automation",
+      "Live tracking share pages for customers",
+    ],
+    ["React", "Go", "PostgreSQL", "Mapbox SDK", "Redis"]
+  ),
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {

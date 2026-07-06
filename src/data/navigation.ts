@@ -18,7 +18,11 @@ export const solutionsNavLinks = [
   { label: "Healthcare", href: "/services/healthcare-software", iconName: "healthcare" },
   { label: "E-Commerce", href: "/services/ecommerce-platform", iconName: "ecommerce" },
   { label: "ERP", href: "/services/erp-development", iconName: "erp" },
+  { label: "Fintech & Neo-Banking App", href: "/services/fintech-app", iconName: "fintech" },
+  { label: "Fitness & Wellness App", href: "/services/fitness-app", iconName: "fitness" },
+  { label: "Logistics & Fleet Management", href: "/services/logistics-software", iconName: "logistics" },
 ];
+
 
 
 export const serviceNavGroups = [
