@@ -37,33 +37,16 @@ export default function Header() {
       )}
     >
       <div className="container-main px-3 sm:px-6 lg:px-8">
-        <div className="flex h-[70px] md:h-[76px] lg:h-[84px] items-center justify-between transition-all duration-300 ease-in-out">
-          <Link href="/" className="relative z-10 flex items-center justify-start select-none w-[60%] min-w-[145px] max-w-[210px] md:w-[140px] lg:w-[155px]">
-            {/* Mobile View: [S Icon] SalaahTech */}
-            <div className="flex md:hidden items-center gap-2 select-none w-full h-[42px]">
-              <Image
-                src={logoIcon}
-                alt="S"
-                width={39}
-                height={42}
-                className="h-[42px] w-auto object-contain select-none"
-                priority
-              />
-              <span className="text-xl font-bold tracking-tight text-foreground select-none">
-                SalaahTech
-              </span>
-            </div>
-            {/* Tablet & Desktop View: Full Logo */}
-            <div className="hidden md:block select-none h-[54px] lg:h-[60px] w-[140px] lg:w-[155px]">
-              <Image
-                src={logo}
-                alt="SalaahTech"
-                width={155}
-                height={60}
-                className="w-full h-full object-contain object-left select-none"
-                priority
-              />
-            </div>
+        <div className="flex h-[92px] md:h-[88px] lg:h-[96px] items-center justify-between transition-all duration-300 ease-in-out">
+          <Link href="/" className="relative z-10 flex items-center justify-start select-none w-[75%] max-w-[240px] md:w-[186px] lg:w-[208px] h-[60px] md:h-[68px] lg:h-[76px]">
+            <Image
+              src={logo}
+              alt="SalaahTech"
+              width={208}
+              height={80}
+              className="w-full h-full object-contain object-left select-none transition-all duration-300 ease-in-out"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -180,7 +163,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[70px] z-40 bg-background/95 backdrop-blur-lg lg:hidden">
+        <div className="fixed inset-0 top-[92px] z-40 bg-background/95 backdrop-blur-lg lg:hidden">
           <nav className="container-main flex flex-col gap-1 py-6" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <Link
