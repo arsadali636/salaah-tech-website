@@ -1,10 +1,10 @@
 export const company = {
   name: "SalaahTech",
   tagline: "Enterprise Software Engineering",
-  email: "hello@salaahtech.com",
-  phone: "+91 81261 77819",
-  phoneSecondary: "+91 81260 44585",
-  whatsapp: "918126177819",
+  email: "salaahtech786@gmail.com",
+  phone: "+91 81260 44585",
+  phoneSecondary: "+91 81261 77819",
+  whatsapp: "918126044585",
   locations: [
     {
       label: "India HQ",

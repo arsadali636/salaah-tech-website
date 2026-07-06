@@ -18,8 +18,8 @@ export function organizationSchema() {
     logo: "https://salaahtech.com/logo.png",
     description:
       "Enterprise software development company specializing in custom software, AI, CRM, ERP, SaaS, and mobile applications.",
-    email: "hello@salaahtech.com",
-    telephone: "+918126177819",
+    email: "salaahtech786@gmail.com",
+    telephone: "+918126044585",
     address: [
       {
         "@type": "PostalAddress",
@@ -89,8 +89,8 @@ export function localBusinessSchema() {
     "@type": "LocalBusiness",
     name: "SalaahTech",
     image: "https://salaahtech.com/logo.png",
-    telephone: "+918126177819",
-    email: "hello@salaahtech.com",
+    telephone: "+918126044585",
+    email: "salaahtech786@gmail.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Film City, Sector 16A, BGR Tower, 3rd Floor",

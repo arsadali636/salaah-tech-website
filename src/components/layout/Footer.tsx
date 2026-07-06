@@ -3,7 +3,7 @@ import Image from "next/image";
 import { footerLinks } from "@/data/navigation";
 import { company } from "@/data/company";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "@/assets/salaah-tech-logo-white.png";
+import logo from "@/assets/salaah-tech-icon.png";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -18,9 +18,10 @@ export default function Footer() {
               <Image
                 src={logo}
                 alt="SalaahTech"
-                width={150}
-                height={52}
-                className="h-[48px] w-auto object-contain object-left select-none"
+                width={300}
+                height={176}
+                className="h-[48px] w-auto object-contain object-left select-none opacity-90 hover:opacity-100 transition-opacity duration-300"
+                unoptimized
                 priority
               />
             </Link>
@@ -40,6 +41,13 @@ export default function Footer() {
                   {company.phone}
                 </a>
               </p>
+              {company.phoneSecondary && (
+                <p>
+                  <a href={`tel:${company.phoneSecondary.replace(/\s/g, "")}`} className="hover:text-white transition-colors">
+                    {company.phoneSecondary}
+                  </a>
+                </p>
+              )}
             </div>
             <div className="mt-6 flex gap-4">
               <a

@@ -121,6 +121,14 @@ export default function ContactPage() {
                     <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="text-primary hover:underline">
                       {company.phone}
                     </a>
+                    {company.phoneSecondary && (
+                      <>
+                        {" / "}
+                        <a href={`tel:${company.phoneSecondary.replace(/\s/g, "")}`} className="text-primary hover:underline">
+                          {company.phoneSecondary}
+                        </a>
+                      </>
+                    )}
                   </p>
                   <p>
                     <span className="font-medium">WhatsApp: </span>

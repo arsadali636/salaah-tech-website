@@ -27,13 +27,24 @@ export default function Header() {
     setServicesOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all duration-300",
+        "sticky top-0 z-50 transition-all duration-300 border-b",
         scrolled
-          ? "glass shadow-soft border-b border-surface-border"
-          : "bg-transparent"
+          ? "bg-surface/95 backdrop-blur-lg border-surface-border shadow-soft"
+          : "bg-surface/80 backdrop-blur-lg border-surface-border/40"
       )}
     >
       <div className="container-main px-3 sm:px-6 lg:px-8">
@@ -163,7 +174,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[92px] z-40 bg-background/95 backdrop-blur-lg lg:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-[92px] z-40 overflow-y-auto bg-background/98 backdrop-blur-lg lg:hidden">
           <nav className="container-main flex flex-col gap-1 py-6" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <Link

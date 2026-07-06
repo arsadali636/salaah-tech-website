@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #fafafa;
+  --background-rgb: 250 250 250;
+  --background: rgb(var(--background-rgb));
   --foreground: #0a0a0b;
   --primary-rgb: 79 70 229;
   --primary: #4f46e5;
@@ -17,7 +18,8 @@
   --surface: #ffffff;
   --surface-elevated: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  --muted: #f4f4f5;
+  --muted-rgb: 244 244 245;
+  --muted: rgb(var(--muted-rgb));
   --muted-foreground: #71717a;
   --success: #16a34a;
   --warning: #ca8a04;
@@ -25,7 +27,8 @@
 }
 
 .dark {
-  --background: #09090b;
+  --background-rgb: 9 9 11;
+  --background: rgb(var(--background-rgb));
   --foreground: #fafafa;
   --primary-rgb: 129 140 248;
   --primary: #818cf8;
@@ -39,7 +42,8 @@
   --surface: #18181b;
   --surface-elevated: #27272a;
   --border: rgba(255, 255, 255, 0.08);
-  --muted: #27272a;
+  --muted-rgb: 39 39 42;
+  --muted: rgb(var(--muted-rgb));
   --muted-foreground: #a1a1aa;
 }
 

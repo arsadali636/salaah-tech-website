@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "rgb(var(--background-rgb) / <alpha-value>)",
         foreground: "var(--foreground)",
         primary: {
           DEFAULT: "rgb(var(--primary-rgb) / <alpha-value>)",
@@ -31,7 +31,7 @@ export default {
           border: "var(--border)",
         },
         muted: {
-          DEFAULT: "var(--muted)",
+          DEFAULT: "rgb(var(--muted-rgb) / <alpha-value>)",
           foreground: "var(--muted-foreground)",
         },
         success: "var(--success)",
