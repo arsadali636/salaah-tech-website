@@ -551,6 +551,126 @@ export const services: Service[] = [
     ],
     ["Monitoring", "CI/CD", "Docker", "AWS", "PostgreSQL"]
   ),
+  createService(
+    "smart-home-app",
+    "Smart Home App Development",
+    "Bespoke IoT applications to control and automate smart home devices.",
+    "We build smart home mobile and tablet apps that connect, manage, and automate IoT devices, lighting, locks, and appliances with clean, highly responsive user interfaces.",
+    "Custom Software",
+    [
+      "IoT device integration & setup",
+      "Real-time state synchronization",
+      "Custom scheduling & automation routines",
+      "Voice assistant integrations (Alexa/Google)",
+      "End-to-end device connection encryption",
+    ],
+    ["React Native", "Flutter", "Node.js", "WebSockets", "AWS IoT"]
+  ),
+  createService(
+    "nfc-payment-solutions",
+    "NFC Payment Solutions",
+    "Secure, contactless payment systems for retail, transit, and mobile apps.",
+    "We develop secure contactless payment systems leveraging Near Field Communication (NFC), host card emulation (HCE), tokenization, and strict payment compliance standards.",
+    "Enterprise Solutions",
+    [
+      "NFC reader & card simulation",
+      "Contactless payment processing",
+      "PCI-DSS compliant data encryption",
+      "Host Card Emulation (HCE)",
+      "Digital wallet integrations",
+    ],
+    ["Java / Kotlin", "Swift", "CoreNFC", "Stripe API", "Tokenization Engines"]
+  ),
+  createService(
+    "education-app-development",
+    "Education App Development",
+    "Interactive, scalable e-learning platforms and educational mobile apps.",
+    "Transform education with custom LMS platforms, virtual classrooms, interactive student portals, and mobile learning apps featuring progress tracking, quizzes, and rich media content.",
+    "Design & Support",
+    [
+      "Custom Learning Management System (LMS)",
+      "Virtual classrooms & video integration",
+      "Student dashboards & progress analytics",
+      "Interactive assessments & gamification",
+      "Offline learning mode support",
+    ],
+    ["Next.js", "React Native", "GraphQL", "AWS Chime", "PostgreSQL"]
+  ),
+  createService(
+    "real-estate-software",
+    "Real Estate Software",
+    "Property management systems, real estate CRMs, and listing portals.",
+    "Empower real estate agencies and property managers with custom platforms for property listings, tenant portals, lead tracking, automated billing, and virtual viewings.",
+    "Enterprise Solutions",
+    [
+      "Interactive property map listings",
+      "Tenant & landlord portals",
+      "Lease management & digital signatures",
+      "Automated rent invoicing & payment collection",
+      "Lead generation & agent CRM systems",
+    ],
+    ["React", "Django", "PostgreSQL", "Google Maps API", "Stripe"]
+  ),
+  createService(
+    "food-delivery-app",
+    "Food Delivery App Development",
+    "On-demand food delivery solutions with real-time tracking and menus.",
+    "We build on-demand food delivery systems featuring user ordering apps, restaurant management dashboards, rider dispatch portals, and live GPS delivery tracking.",
+    "Mobile Development",
+    [
+      "Interactive menus & easy ordering",
+      "Real-time GPS delivery tracking",
+      "Rider dispatcher & driver apps",
+      "Restaurant partner dashboards",
+      "Secure checkout & multi-payment support",
+    ],
+    ["Flutter", "React Native", "Google Maps SDK", "Node.js", "Socket.io"]
+  ),
+  createService(
+    "taxi-booking-app",
+    "Taxi Booking App Development",
+    "On-demand ride-sharing and taxi booking platforms with auto-dispatch.",
+    "Get custom ride-hailing software with customer booking apps, driver navigation, real-time routing, fare estimation, and automatic dispatch algorithms.",
+    "Mobile Development",
+    [
+      "Passenger booking & ride options",
+      "Driver app with turn-by-turn navigation",
+      "Live fare estimation & dynamic pricing",
+      "Automated matching & dispatch algorithm",
+      "In-app wallet & split-fare payments",
+    ],
+    ["Kotlin", "Swift", "Mapbox SDK", "Firebase Realtime DB", "Node.js"]
+  ),
+  createService(
+    "iot-solutions",
+    "Internet of Things (IoT)",
+    "Connected software that collects, analyzes, and automates device operations.",
+    "Bridge the physical and digital worlds with custom IoT backends, sensor integration, dashboard analytics, and device management systems built for high-throughput data.",
+    "Enterprise Solutions",
+    [
+      "High-throughput MQTT broker setup",
+      "Telemetry data ingestion & analytics",
+      "Over-the-air (OTA) update managers",
+      "Custom device state dashboard interfaces",
+      "Automated alerts & trigger workflows",
+    ],
+    ["Go", "Node.js", "InfluxDB", "AWS IoT Core", "RabbitMQ"]
+  ),
+  createService(
+    "healthcare-software",
+    "Healthcare Software",
+    "HIPAA-compliant telemedicine platforms, patient portals, and EHR systems.",
+    "We design and build secure, compliant healthcare software, patient portals, remote health monitoring systems, and booking applications for modern clinics.",
+    "Enterprise Solutions",
+    [
+      "HIPAA-compliant video consultations",
+      "Electronic Health Record (EHR) integration",
+      "Secure patient intake & portal records",
+      "Online appointment scheduling & reminders",
+      "E-prescriptions & medical billing",
+    ],
+    ["Next.js", "NestJS", "PostgreSQL", "AWS Mediasoup", "HL7/FHIR Protocols"]
+  ),
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {

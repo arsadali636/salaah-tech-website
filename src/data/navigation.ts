@@ -1,10 +1,25 @@
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
+
+export const solutionsNavLinks = [
+  { label: "Smart Home App", href: "/services/smart-home-app", iconName: "home" },
+  { label: "NFC Payment Solutions", href: "/services/nfc-payment-solutions", iconName: "payment" },
+  { label: "Education App Development", href: "/services/education-app-development", iconName: "education" },
+  { label: "Real Estate", href: "/services/real-estate-software", iconName: "real-estate" },
+  { label: "Food Delivery", href: "/services/food-delivery-app", iconName: "food" },
+  { label: "Taxi Booking App Development", href: "/services/taxi-booking-app", iconName: "taxi" },
+  { label: "Internet of Things", href: "/services/iot-solutions", iconName: "iot" },
+  { label: "Healthcare", href: "/services/healthcare-software", iconName: "healthcare" },
+  { label: "E-Commerce", href: "/services/ecommerce-platform", iconName: "ecommerce" },
+  { label: "ERP", href: "/services/erp-development", iconName: "erp" },
+];
+
 
 export const serviceNavGroups = [
   {
