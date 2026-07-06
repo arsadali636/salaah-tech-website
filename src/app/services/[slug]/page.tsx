@@ -12,6 +12,9 @@ import {
   faqSchema,
   breadcrumbSchema,
 } from "@/components/seo/JsonLd";
+import FaqAccordion from "@/components/services/FaqAccordion";
+import ProcessTimeline from "@/components/services/ProcessTimeline";
+import ProjectCalculator from "@/components/services/ProjectCalculator";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -114,17 +117,40 @@ export default async function ServicePage({ params }: Props) {
           </FadeIn>
         </Section>
 
+        {/* Process Timeline */}
+        <Section className="bg-muted/50 !py-12">
+          <FadeIn>
+            <SectionHeader
+              title="Our Engineering Process"
+              description="How we take your idea from concept to launch with clean, agile execution."
+              align="left"
+            />
+            <div className="mt-8">
+              <ProcessTimeline />
+            </div>
+          </FadeIn>
+        </Section>
+
+        {/* Budget Estimator */}
+        <Section className="!py-12">
+          <FadeIn>
+            <SectionHeader
+              title="Project Cost Estimator"
+              description="Customize features and specs to calculate instant timeline and budget forecasts."
+              align="left"
+            />
+            <div className="mt-8">
+              <ProjectCalculator serviceTitle={service.title} />
+            </div>
+          </FadeIn>
+        </Section>
+
         {/* FAQ */}
         <Section className="bg-muted/50 !py-12">
           <FadeIn>
             <SectionHeader title="Frequently Asked Questions" align="left" />
-            <div className="mt-8 space-y-4">
-              {service.faqs.map((faq) => (
-                <div key={faq.question} className="rounded-xl border border-surface-border bg-surface p-5">
-                  <h3 className="font-semibold">{faq.question}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
-                </div>
-              ))}
+            <div className="mt-8">
+              <FaqAccordion faqs={service.faqs} />
             </div>
           </FadeIn>
         </Section>
