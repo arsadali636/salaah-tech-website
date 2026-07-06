@@ -45,21 +45,22 @@ export default function ProjectCalculator({ serviceTitle }: ProjectCalculatorPro
 
     // Platform multiplier base
     if (platform === "web") {
-      baseMinCost = 4000;
-      baseMaxCost = 6000;
+      baseMinCost = 2000;
+      baseMaxCost = 4000;
       baseMinTime = 1.5;
       baseMaxTime = 2.5;
     } else if (platform === "mobile") {
-      baseMinCost = 5000;
-      baseMaxCost = 8000;
+      baseMinCost = 3000;
+      baseMaxCost = 6000;
       baseMinTime = 2;
       baseMaxTime = 3;
     } else {
-      baseMinCost = 8000;
-      baseMaxCost = 12000;
+      baseMinCost = 6000;
+      baseMaxCost = 10000;
       baseMinTime = 2.5;
       baseMaxTime = 4;
     }
+
 
     // Scope multiplier
     if (scope === "mid") {
