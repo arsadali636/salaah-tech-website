@@ -38,29 +38,15 @@ export default function Header() {
     >
       <div className="container-main px-3 sm:px-6 lg:px-8">
         <div className="flex h-[72px] md:h-[74px] lg:h-[72px] items-center justify-between transition-all duration-300 ease-in-out">
-          <Link href="/" className="relative z-10 flex items-center justify-start transition-all duration-300 ease-in-out select-none">
-            {/* Mobile Navigation - Standalone "S" logo */}
-            <div className="block md:hidden">
-              <Image
-                src={logoIcon}
-                alt="SalaahTech"
-                width={52}
-                height={52}
-                className="h-[48px] w-auto object-contain object-left select-none transition-all duration-300 ease-in-out"
-                priority
-              />
-            </div>
-            {/* Tablet & Desktop Navigation - Full Horizontal Logo */}
-            <div className="hidden md:block">
-              <Image
-                src={logo}
-                alt="SalaahTech"
-                width={173}
-                height={60}
-                className="h-[50px] w-auto object-contain object-left md:h-[50px] lg:h-[55px] select-none transition-all duration-300 ease-in-out"
-                priority
-              />
-            </div>
+          <Link href="/" className="relative z-10 flex w-[50%] min-w-[145px] max-w-[210px] md:w-[130px] lg:w-[142px] h-[54px] md:h-[50px] lg:h-[55px] items-center justify-start transition-all duration-300 ease-in-out select-none">
+            <Image
+              src={logo}
+              alt="SalaahTech"
+              width={210}
+              height={72}
+              className="w-full h-full object-contain object-left select-none transition-all duration-300 ease-in-out"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
