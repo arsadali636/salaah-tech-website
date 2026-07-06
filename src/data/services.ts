@@ -564,7 +564,7 @@ export const services: Service[] = [
       "Voice assistant integrations (Alexa/Google)",
       "End-to-end device connection encryption",
     ],
-    ["React Native", "Flutter", "Node.js", "WebSockets", "AWS IoT"]
+    ["React Native", "Flutter", "Kotlin", "Swift", "Node.js", "WebSockets", "AWS IoT"]
   ),
   createService(
     "nfc-payment-solutions",
@@ -594,7 +594,7 @@ export const services: Service[] = [
       "Interactive assessments & gamification",
       "Offline learning mode support",
     ],
-    ["Next.js", "React Native", "GraphQL", "AWS Chime", "PostgreSQL"]
+    ["Next.js", "React Native", "Kotlin", "Swift", "GraphQL", "AWS Chime", "PostgreSQL"]
   ),
   createService(
     "real-estate-software",
@@ -624,7 +624,7 @@ export const services: Service[] = [
       "Restaurant partner dashboards",
       "Secure checkout & multi-payment support",
     ],
-    ["Flutter", "React Native", "Google Maps SDK", "Node.js", "Socket.io"]
+    ["Flutter", "React Native", "Kotlin", "Swift", "Google Maps SDK", "Node.js", "Socket.io"]
   ),
   createService(
     "taxi-booking-app",
@@ -684,7 +684,7 @@ export const services: Service[] = [
       "P2P money transfers & payments",
       "Investment & savings modules",
     ],
-    ["React Native", "NestJS", "PostgreSQL", "Stripe API", "AWS API Gateway"]
+    ["React Native", "Kotlin", "Swift", "NestJS", "PostgreSQL", "Stripe API", "AWS API Gateway"]
   ),
   createService(
     "fitness-app",
@@ -699,7 +699,7 @@ export const services: Service[] = [
       "Live & on-demand video session players",
       "Community challenges & achievements",
     ],
-    ["Flutter", "Node.js", "Firebase", "WebRTC", "Google Fit API"]
+    ["Flutter", "Kotlin", "Swift", "Node.js", "Firebase", "WebRTC", "Google Fit API"]
   ),
   createService(
     "logistics-software",
