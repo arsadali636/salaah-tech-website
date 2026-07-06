@@ -39,14 +39,15 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 transition-all duration-300 border-b",
-        scrolled
-          ? "bg-surface/95 backdrop-blur-lg border-surface-border shadow-soft"
-          : "bg-surface/80 backdrop-blur-lg border-surface-border/40"
-      )}
-    >
+    <header className="sticky top-0 z-50 transition-all duration-300">
+      <div
+        className={cn(
+          "absolute inset-0 -z-10 border-b transition-all duration-300",
+          scrolled
+            ? "bg-surface/95 backdrop-blur-lg border-surface-border shadow-soft"
+            : "bg-surface/80 backdrop-blur-lg border-surface-border/40"
+        )}
+      />
       <div className="container-main px-3 sm:px-6 lg:px-8">
         <div className="flex h-[92px] md:h-[88px] lg:h-[96px] items-center justify-between transition-all duration-300 ease-in-out">
           <Link href="/" className="relative z-10 flex items-center justify-start select-none w-[75%] max-w-[240px] md:w-[186px] lg:w-[208px] h-[60px] md:h-[68px] lg:h-[76px]">
@@ -174,7 +175,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="fixed inset-x-0 bottom-0 top-[92px] z-40 overflow-y-auto bg-background/98 backdrop-blur-lg lg:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-[92px] md:top-[88px] z-40 overflow-y-auto bg-background/98 backdrop-blur-lg lg:hidden">
           <nav className="container-main flex flex-col gap-1 py-6" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <Link
